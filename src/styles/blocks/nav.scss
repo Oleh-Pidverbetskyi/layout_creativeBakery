@@ -1,0 +1,25 @@
+.nav {
+  width: 72%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    gap: 34px;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    color: $text-color;
+    text-decoration: none;
+    transition: color 0.4s;
+
+    &:hover {
+      color: $secondary-titles-color;
+    }
+  }
+}
