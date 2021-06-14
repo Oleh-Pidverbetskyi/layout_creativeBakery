@@ -3,11 +3,500 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <title>BakerLab</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Rubik&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" href="../src/images/header-cake.png">
+    <link rel="stylesheet" href="../src/styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header" id="header">
+      <div class="navigation">
+        <a href="" class="logo">
+          <img
+            src="../src/images/logo.png"
+            alt="BakerLogo"
+            class="logo__img"
+          >
+        </a>
+        <input id="toggle" type="checkbox">
+        <label for="toggle" class="btn">
+          <span></span>
+        </label>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link"> Bakery </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"> Bakershops </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"> About </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link"> Contacts </a>
+            </li>
+          </ul>
+          <div class="phone">
+            <ul class="phone__list">
+              <li class="phone__item">
+                <a href="tel:+380663363636" class="phone__link">
+                  +38 066 336 36 36
+                </a>
+              </li>
+              <li class="phone__item">
+                <a href="#" class="phone__link">Call back</a>
+              </li>
+              <li class="phone__item">
+                <select
+                  class="phone__select"
+                  name="lang"
+                  id="lang"
+                >
+                  <option class="phone__select-color" value="En">En</option>
+                  <option class="phone__select-color" value="Ua">Ua</option>
+                  <option class="phone__select-color" value="Ru">Ru</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="main" id="main">
+      <section class="general" id="general">
+        <div class="general__board">
+          <h1 class="general__title">Creative bakery</h1>
+          <p class="general__text">
+            We bake your fantasies: croissants cakes, cookies, and cupcakes.
+          </p>
+          <a href="#" class="general__btn button link-btn">Learn more</a>
+        </div>
+        <div class="general__slider">
+          <img
+            src="../src/images/cr-arrow.png"
+            alt="arrow"
+            class="arrow arrow--rotate"
+          >
+          <div class="general__number">01</div>
+          <div class="general__number general__number--little">02</div>
+          <div class="general__number general__number--little">03</div>
+          <img
+            src="../src/images/arrow.png"
+            alt="arrow"
+            class="arrow"
+          >
+        </div>
+      </section>
+
+      <section class="product" id="product">
+        <h2 class="product__title title">Bakery</h2>
+        <div class="product__container">
+          <div class="item">
+            <div class="item__cokies">
+              <h3 class="item__title">Cookies</h3>
+              <h4 class="item__composition">Chocolate mix</h4>
+              <p class="item__description">
+                Oatmeal cookies with golden raisins, orange zest and chocolate
+                chips.
+              </p>
+              <div class="item__price">
+                <p class="item__price-text">$ 4 / 100 g</p>
+              </div>
+            </div>
+            <div class="item__photo">
+              <img
+                src="../src/images/arrow-left.png"
+                alt="arrow"
+                class="item__arrow item__arrow--indent-right"
+              >
+              <img
+                src="../src/images/Blueberry.png"
+                alt="Blueberry"
+                class="item__image"
+              >
+              <img
+                src="../src/images/arrow-right.png"
+                alt="arrow"
+                class="item__arrow item__arrow--indent-left"
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__cokies">
+              <h3 class="item__title">Cakes</h3>
+              <h4 class="item__composition">Mint coffee mocca</h4>
+              <p class="item__description">
+                Chocolate biscuit coffee cake topped with a mint buttercream and
+                powder.
+              </p>
+              <div class="item__price">
+                <p class="item__price-text">$ 5 / 100 g</p>
+              </div>
+            </div>
+            <div class="item__photo">
+              <img
+                src="../src/images/arrow-left.png"
+                alt="arrow"
+                class="item__arrow item__arrow--indent-right"
+              >
+              <img
+                src="../src/images/green-cake.png"
+                alt="Cake"
+                class="item__image"
+              >
+              <img
+                src="../src/images/arrow-right.png"
+                alt="arrow"
+                class="item__arrow item__arrow--indent-left"
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__cokies">
+              <h3 class="item__title">Croissants</h3>
+              <h4 class="item__composition">Almond classic</h4>
+              <p class="item__description">
+                Light multi-layered croissant strewn with cinammon and almond
+                “petals”.
+              </p>
+              <div class="item__price">
+                <p class="item__price-text">$ 6.5 / 2</p>
+              </div>
+            </div>
+            <div class="item__photo item__photo--flex">
+              <img
+                src="../src/images/arrow-left.png"
+                alt="arrow"
+                class="item__arrow item__arrow--indent-right"
+              >
+              <img
+                src="../src/images/croissant.png"
+                alt="Croissant"
+                class="item__image"
+              >
+              <img
+                src="../src/images/arrow-right.png"
+                alt="arrow"
+                class="item__arrow item__arrow--indent-left"
+              >
+            </div>
+          </div>
+          <div class="item">
+            <div class="item__cokies">
+              <h3 class="item__title">Cupcakes</h3>
+              <h4 class="item__composition">Triple creamy</h4>
+              <p class="item__description">
+                Chocolate salted caramel, Vanilla frutti pebbles and Chocolate
+                chip cupcakes.
+              </p>
+              <div class="item__price">
+                <p class="item__price-text">$ 8 /3</p>
+              </div>
+            </div>
+            <div class="item__photo">
+              <img
+                src="../src/images/arrow-left.png"
+                alt="arrow"
+                class="item__arrow item__arrow--indent-right"
+              >
+              <img
+                src="../src/images/cupcake.png"
+                alt="Cupcake"
+                class="item__image"
+              >
+              <img
+                src="../src/images/arrow-right.png"
+                alt="arrow"
+                class="item__arrow item__arrow--indent-left"
+              >
+            </div>
+          </div>
+          <a href="#general" class="product__btn button link-btn">All bakeries</a>
+        </div>
+      </section>
+
+      <section class="bakershop" id="backershop">
+        <h2 class="bakershop__title title">Bakershops</h2>
+        <form
+          action="#"
+          class="form"
+          method="POST"
+        >
+          <select
+            name="city"
+            id="city"
+            class="form__city"
+            required
+          >
+            <option value="City">City</option>
+            <option value="Kyiv">Kyiv</option>
+            <option value="Lviv">Lviv</option>
+            <option value="Dnipro">Dnipro</option>
+          </select>
+          <select
+            name="city"
+            id="somecity"
+            class="form__city form__city--width"
+            required
+          >
+            <option value="Adress">Adress</option>
+            <option value="Lviv">Lviv</option>
+            <option value="Dnipro">Dnipro</option>
+          </select>
+          <button class="form__button button">Search</button>
+        </form>
+        <div>
+          <img
+            src="../src/images/map.png"
+            alt="map"
+            class="bakershop__map"
+          >
+        </div>
+        <div class="lens">
+          <div class="lens__item">-</div>
+          <div class="lens__item">+</div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <h2 class="about__title title">About</h2>
+        <p class="about__text">
+          Bakerlab is a bakery network in Ukraine, specialising in creating
+          unique pastry using unconventional recepies. We are commited to
+          delivering the best experience to our clients.
+        </p>
+        <ul class="about__achievement achievement">
+          <li class="achievement__item">
+            <img
+              src=".//images/About-cake.png"
+              alt="work"
+              class="achievement__photo"
+            >
+            <span class="achievement__number"> 2015 </span>
+            <span class="achievement__text"> Foundation year </span>
+          </li>
+          <li class="achievement__item">
+            <img
+              src=".//images/About-cap.png"
+              alt="work"
+              class="achievement__photo"
+            >
+            <span class="achievement__number"> 43 </span>
+            <span class="achievement__text"> Companies </span>
+          </li>
+          <li class="achievement__item">
+            <img
+              src=".//images/About-work.png"
+              alt="work"
+              class="achievement__photo"
+            >
+            <span class="achievement__number"> 155 </span>
+            <span class="achievement__text"> Workers </span>
+          </li>
+          <li class="achievement__item">
+            <img
+              src=".//images/About-icecream.png"
+              alt="work"
+              class="achievement__photo"
+            >
+            <span class="achievement__number"> 85 </span>
+            <span class="achievement__text"> Different treats </span>
+          </li>
+          <li class="achievement__item">
+            <img
+              src=".//images/About-smile.png"
+              alt="work"
+              class="achievement__photo"
+            >
+            <span class="achievement__number"> 9580 </span>
+            <span class="achievement__text"> Happy clients </span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <h2 class="contacts__title title">Contacts</h2>
+        <div class="contacts__block">
+          <div class="contacts__info card">
+            <h4 class="card__title">Get in touch</h4>
+            <div class="card__adress">
+              <img
+                src="../src/images/location.png"
+                alt="location"
+                class="card__loc"
+              >
+              <a href="#" class="card__location">
+                <p class="card__location-text">
+                  <strong>Bakerlab Head Office.</strong><br>
+                  Ukraine, Kyiv, Holosiivska St, 53
+                </p>
+              </a>
+            </div>
+            <div class="card__adress">
+              <img
+                src="../src/images/phone.png"
+                alt="phone"
+                class="card__loc"
+              >
+              <a href="tel:+380663363636" class="card__location">
+                <p class="card__location-text">
+                  <strong>Support 24/7</strong><br>
+                  +38 066 336 36 36
+                </p>
+              </a>
+            </div>
+            <div class="card__adress">
+              <img
+                src="../src/images/letter.png"
+                alt="suport"
+                class="card__loc"
+              >
+              <a href="#" class="card__location">
+                <p class="card__location-text">
+                  <strong>Support</strong><br>
+                  info@bakerlab.com
+                </p>
+              </a>
+            </div>
+            <div class="card__adress">
+              <a href="#" class="card__location">
+                <p class="card__location-text text-margin">
+                  <strong>Cooperation</strong><br>
+                  max.yovenko@bakerlab.com
+                </p>
+              </a>
+            </div>
+            <div class="card__adress">
+              <a href="#" class="card__location">
+                <p class="card__location-text text-margin">
+                  <strong>PR Manager</strong><br>
+                  ihor.lukash@bakerlab.com
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="contacts__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.3621856365257!2d30.510088815613763!3d50.39708737946806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8ca89299f11%3A0x4a4968e0ee2613b5!2z0YPQuy4g0JPQvtC70L7RgdC10LXQstGB0LrQsNGPLCA1Mywg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1623594837863!5m2!1sru!2sua"
+              width="600"
+              height="600"
+              allowfullscreen=""
+              loading="lazy"
+              class="contacts__map"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <section class="feedback" id="feedback">
+        <img
+          src="../src/images/smile-woman.png"
+          alt="funny woman with letters"
+          class="feedback__img"
+        >
+        <div class="feedback__container">
+          <h4 class="feedback__title">We’d love to hear your feedback</h4>
+          <form
+            action="#"
+            class="feedback__form"
+            method="POST"
+          >
+            <input
+              class="feedback__form-input"
+              type="text"
+              name="name"
+              placeholder="Name*"
+              required
+            >
+            <input
+              class="feedback__form-input"
+              type="email"
+              name="email"
+              placeholder="E-mail*"
+              required
+            >
+            <input
+              class="feedback__form-input"
+              type="tel"
+              name="tel"
+              placeholder="Phone"
+              required
+            >
+            <textarea
+              class="feedback__form-input"
+              name="message"
+              id="message"
+              cols="30"
+              rows="1"
+              placeholder="Message"
+            >
+            </textarea>
+            <button class="button feedback__form-btn">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <nav class="menu">
+        <a href="#" class="menu__logo">
+          <img
+            src="../src/images/logofooter.png"
+            alt="BakerLogo"
+            class="menu__logo-image"
+          >
+        </a>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Bakery </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Bakershops </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"> About </a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link"> Contacts </a>
+          </li>
+        </ul>
+        <div class="networks">
+          <ul class="networks__list">
+            <li class="networks__item">
+              <a href="#" class="networks__link">
+                <img
+                  src="../src/images/footer-twitter.png"
+                  alt="footer-twitter"
+                >
+              </a>
+            </li>
+            <li class="networks__item">
+              <a href="#" class="networks__link">
+                <img
+                  src="../src/images/footer-facebook.png"
+                  alt="footer-facebook"
+                >
+              </a>
+            </li>
+            <li class="networks__item">
+              <a href="#" class="networks__link">
+                <img
+                  src="../src/images/footer-instagram.png"
+                  alt="footer-instagram"
+                >
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer__label">
+        <span class="footer__label-text">© 2015–2020</span>
+        <span class="footer__label-text">Privacy — Terms</span>
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
