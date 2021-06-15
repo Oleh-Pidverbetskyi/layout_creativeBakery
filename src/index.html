@@ -24,7 +24,7 @@
         </a>
         <input id="toggle" type="checkbox">
         <label for="toggle" class="btn">
-          <span></span>
+          <span class="btn__off"></span>
         </label>
         <nav class="nav">
           <ul class="nav__list">
@@ -49,7 +49,7 @@
                 </a>
               </li>
               <li class="phone__item">
-                <a href="#" class="phone__link">Call back</a>
+                <a href="tel:+380663363636" class="phone__link">Call back</a>
               </li>
               <li class="phone__item">
                 <select
@@ -225,7 +225,7 @@
         <form
           action="#backershop"
           class="form"
-          method="GET"
+          method="POST"
         >
           <select
             name="city"
@@ -233,7 +233,13 @@
             class="form__city"
             required
           >
-            <option value="City">City</option>
+            <option
+              value="City"
+              disabled
+              selected
+            >
+              City
+            </option>
             <option value="Kyiv">Kyiv</option>
             <option value="Lviv">Lviv</option>
             <option value="Dnipro">Dnipro</option>
@@ -244,7 +250,13 @@
             class="form__city form__city--width"
             required
           >
-            <option value="Adress">Adress</option>
+            <option
+              value="Adress"
+              disabled
+              selected
+            >
+              Adress
+            </option>
             <option value="Lviv">Lviv</option>
             <option value="Dnipro">Dnipro</option>
           </select>
@@ -408,7 +420,7 @@
           <form
             action="#feedback"
             class="feedback__form"
-            method="GET"
+            method="POST"
           >
             <input
               class="feedback__form-input"
@@ -431,15 +443,15 @@
               placeholder="Phone"
               required
             >
-            <textarea
+            <input
               class="feedback__form-input"
               name="message"
               id="message"
               cols="30"
               rows="1"
-              placeholder="Message"
+              placeholder="Message*"
             >
-            </textarea>
+             </input>
             <button class="button feedback__form-btn">Send</button>
           </form>
         </div>
