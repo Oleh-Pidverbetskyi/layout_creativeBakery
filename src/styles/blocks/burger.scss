@@ -1,3 +1,7 @@
+#toggle {
+  opacity: 0;
+}
+
 @media screen and (max-width: 1045px) {
   .btn {
     position: fixed;
@@ -64,7 +68,7 @@
   .nav--active {
     right: 0;
   }
-  
+
   .nav__list {
     display: flex;
     flex-direction: column;
