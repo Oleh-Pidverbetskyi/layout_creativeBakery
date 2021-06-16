@@ -47,16 +47,35 @@
     padding-bottom: 200px;
   }
 
+  &__arrow {
+    width: 26px;
+    height: 15px;
+    margin-right: 12px;
+    margin-top: 40px;
+    transition: transform 0.4s;
+    cursor: pointer;
+
+    &--rotate {
+      color: #f1cc9d;
+      cursor: pointer;
+      margin-top: 213px;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
   &__number {
     font-size: 176px;
     line-height: 209px;
     color: $text-color;
-  }
 
-  &__number--little {
-    font-size: 40px;
-    line-height: 47px;
-    color: #f1cc9d;
+    &--little {
+      font-size: 40px;
+      line-height: 47px;
+      color: #f1cc9d;
+    }
   }
 
   @media screen and (min-width: 1045px) and (max-width: 1240px) {
@@ -82,13 +101,13 @@
       font-size: 70px;
       margin-right: 20px;
       line-height: 0px;
+
+      &--little {
+        font-size: 35px;
+      }
     }
 
-    &__number--little {
-      font-size: 35px;
-    }
-
-    .arrow {
+    &__arrow {
       transform: rotate(270deg);
       margin: 0;
       height: 12px;
