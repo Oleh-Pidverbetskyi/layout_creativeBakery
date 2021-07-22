@@ -1,0 +1,164 @@
+@media screen and(min-width: $phone) and (max-width: $tablet) {
+  .product {
+    padding: 60px 10px;
+
+    &__title {
+      font-size: 60px;
+    }
+  }
+
+  .production {
+    flex-direction: column;
+    margin-bottom: 40px;
+
+    &__photo {
+      justify-content: center;
+    }
+
+    &__title {
+      font-size: 35px;
+    }
+    &__composition {
+      font-size: 20px;
+    }
+
+    &__description {
+      font-size: 16px;
+    }
+
+    &__price {
+      width: 65px;
+      height: 65px;
+      text-align: center;
+    }
+
+    &__price--text {
+      text-align: center;
+      line-height: 24px;
+    }
+  }
+  .lens {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 50%;
+    }
+  }
+
+  .bakershop {
+    background-color: #f1cc9d;
+    padding: 40px 16px;
+
+    &__title {
+      margin-bottom: 40px;
+      font-size: 60px;
+    }
+  }
+
+  .form {
+    flex-direction: column;
+    margin-bottom: 60px;
+
+    &__city {
+      width: 99%;
+    }
+
+    &__city--width {
+      width: 99%;
+    }
+
+    &__button {
+      margin: 0 auto;
+    }
+  }
+
+  .achievement {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
+  .card {
+    padding: 40px 20px 120px 40px;
+  }
+
+  .contacts {
+    &__block {
+      display: block;
+    }
+  }
+
+  .feedback {
+    flex-direction: column-reverse;
+    padding: 80px 15px;
+
+    &__title {
+      text-align: center;
+      font-size: 19px;
+    }
+
+    &__img {
+      margin: 0 auto;
+    }
+
+    &__form {
+      max-width: 350px;
+      margin: auto;
+
+      &-btn {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .feedback {
+      &__img {
+        max-width: 300px;
+      }
+    }
+  }
+
+  .footer {
+    padding: 40px 14px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__logo {
+      margin-bottom: 50px;
+    }
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      margin-bottom: 20px;
+      margin-left: 40px;
+
+      &:last-child {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .networks {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 52px;
+
+    &__list {
+      gap: 80px;
+    }
+  }
+}

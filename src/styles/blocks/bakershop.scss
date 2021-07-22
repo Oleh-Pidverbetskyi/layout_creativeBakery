@@ -1,0 +1,13 @@
+.bakershop {
+  background-color: $bg-bakershops;
+  padding: 40px 50px;
+
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__map {
+    margin: 0 auto;
+    width: 80vw;
+    margin-bottom: 30px;
+  }
+}

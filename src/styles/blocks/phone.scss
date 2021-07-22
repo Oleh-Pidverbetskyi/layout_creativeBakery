@@ -1,0 +1,39 @@
+.phone {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    list-style: none;
+  }
+
+  &__link {
+    margin-left: -17px;
+    text-decoration: none;
+    color: $text-color;
+    font-size: 16px;
+    padding: 5px 18px;
+    line-height: 24px;
+    border-radius: 40px;
+    transition: background-color 0.5s;
+
+    &:hover {
+      background-color: #f1cc9d;
+      border-radius: 40px;
+    }
+  }
+
+  &__select {
+    border: none;
+    background-color: transparent;
+
+    &:focus,
+    &:active {
+      border: none;
+    }
+
+    option {
+      color: $secondary-titles-color;
+    }
+  }
+}

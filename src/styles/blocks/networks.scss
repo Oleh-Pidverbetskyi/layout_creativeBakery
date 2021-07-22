@@ -1,0 +1,24 @@
+.networks {
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #fff;
+    transition: background-color, transform 0.5s;
+
+    &:hover {
+      background-color: $secondary-titles-color;
+      transform: scale(1.2);
+    }
+  }
+}

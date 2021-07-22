@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Rubik", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Cookie", cursive;
+  font-weight: normal;
+}
+
+h3,
+h4,
+p,
+span {
+  font-family: "Rubik", sans-serif;
+  font-weight: normal;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+span {
+  color: #412d22;
+}
+
+input,
+select,
+textarea {
+  outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid #e39a3b;
+  -webkit-text-fill-color: #e39a3b;
+  transition: background-color 5000s ease-in-out 0s;
+}

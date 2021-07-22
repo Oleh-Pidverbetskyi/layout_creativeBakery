@@ -1,0 +1,156 @@
+.general {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+  background: url(../images/main.png) no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 320px) and (max-width: 500px) {
+    height: 100vh;
+    background: url(../images/main.png) no-repeat center;
+    background-size: cover;
+  }
+
+  &__board {
+    padding-left: 59px;
+  }
+
+  &__title {
+    padding-top: 160px;
+    font-size: 160px;
+    line-height: 177px;
+    margin-bottom: 20px;
+    color: $text-color;
+  }
+
+  &__text {
+    max-width: 420px;
+    margin-bottom: 25px;
+    font-size: 26px;
+    line-height: 39px;
+    color: $text-color;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+
+  &__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: $secondary-titles-color;
+    padding-right: 50px;
+    padding-bottom: 200px;
+  }
+
+  &__arrow {
+    width: 26px;
+    height: 15px;
+    margin-right: 12px;
+    margin-top: 40px;
+    transition: transform 0.4s;
+    cursor: pointer;
+
+    &--rotate {
+      color: #f1cc9d;
+      cursor: pointer;
+      margin-top: 213px;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__number {
+    font-size: 176px;
+    line-height: 209px;
+    color: $text-color;
+
+    &--little {
+      font-size: 40px;
+      line-height: 47px;
+      color: #f1cc9d;
+    }
+  }
+
+  @media screen and (min-width: 1045px) and (max-width: 1240px) {
+    grid-template-columns: 64.5% 1fr;
+
+    &__title {
+      line-height: 150px;
+    }
+  }
+
+  @media screen and (max-width: 1045px) {
+    grid-template-columns: 1fr;
+
+    &__slider {
+      flex-direction: row;
+      align-items: center;
+      background: none;
+      padding-right: 0;
+      padding-bottom: 60px;
+    }
+
+    &__number {
+      font-size: 70px;
+      margin-right: 20px;
+      line-height: 0px;
+
+      &--little {
+        font-size: 35px;
+      }
+    }
+
+    &__arrow {
+      transform: rotate(270deg);
+      margin: 0;
+      height: 12px;
+      width: 20px;
+
+      &--rotate {
+        margin-right: 15px;
+        color: $secondary-titles-color;
+      }
+
+      &:hover {
+        transform: rotate(270deg);
+      }
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 500px) {
+    &__board {
+      padding-left: 20px;
+    }
+
+    &__title {
+      font-size: 100px;
+      line-height: 80%;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 150%;
+    }
+
+    &__number {
+      font-size: 40px;
+      margin-right: 20px;
+      line-height: 0px;
+    }
+
+    &__number--little {
+      font-size: 16px;
+    }
+
+    &__slider {
+      padding-bottom: 20px;
+    }
+  }
+}

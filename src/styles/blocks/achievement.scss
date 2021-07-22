@@ -1,0 +1,27 @@
+.achievement {
+  display: grid;
+  gap: 16px;
+  justify-content: center;
+  grid-template-columns: repeat(5, minmax(200px, 1fr));
+  list-style: none;
+
+  @media screen and (max-width: 1080px) {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__photo {
+    margin-bottom: 15px;
+  }
+
+  &__number {
+    font-size: 60px;
+    line-height: 71px;
+    margin-bottom: 10px;
+  }
+}

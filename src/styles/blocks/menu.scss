@@ -1,0 +1,30 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    &-image {
+      max-width: 112px;
+      max-height: 57px;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 34px;
+    list-style-type: none;
+  }
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $secondary-titles-color;
+    }
+  }
+}

@@ -1,7 +1,25 @@
 @import "utils";
-@import "fonts";
-@import "typography";
-
-body {
-  background: $c-gray;
-}
+@import ".//blocks/reset.scss";
+@import ".//blocks/button.scss";
+@import ".//blocks/navigation.scss";
+@import ".//blocks/logo.scss";
+@import ".//blocks/nav.scss";
+@import ".//blocks/phone.scss";
+@import ".//blocks/burger.scss";
+@import ".//blocks/general.scss";
+@import ".//blocks/product.scss";
+@import ".//blocks/title.scss";
+@import ".//blocks/production.scss";
+@import ".//blocks/bakershop.scss";
+@import ".//blocks/form.scss";
+@import ".//blocks/lens.scss";
+@import ".//blocks/about.scss";
+@import ".//blocks/achievement.scss";
+@import ".//blocks/contacts.scss";
+@import ".//blocks/card.scss";
+@import ".//blocks/text-margin.scss";
+@import ".//blocks/feedback.scss";
+@import ".//blocks/footer.scss";
+@import ".//blocks/networks.scss";
+@import ".//blocks/menu.scss";
+@import ".//blocks/mobile-version.scss";
