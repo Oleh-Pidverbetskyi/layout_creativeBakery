@@ -102,6 +102,27 @@
       text-align: center;
       font-size: 19px;
     }
+
+    &__img {
+      margin: 0 auto;
+    }
+
+    &__form {
+      max-width: 350px;
+      margin: auto;
+
+      &-btn {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .feedback {
+      &__img {
+        max-width: 300px;
+      }
+    }
   }
 
   .footer {

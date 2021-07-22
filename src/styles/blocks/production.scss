@@ -57,6 +57,16 @@
   }
 
   &__image {
+    flex: 0 0 100%;
+    max-width: 90%;
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__image {
     @media screen and(max-width:1250px) {
       max-width: 75%;
     }
