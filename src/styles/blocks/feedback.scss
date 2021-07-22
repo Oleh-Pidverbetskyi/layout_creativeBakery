@@ -39,6 +39,7 @@
     }
   }
 }
+
 textarea::placeholder {
   position: relative;
   top: 70px;
@@ -49,10 +50,6 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 textarea:focus:-moz-placeholder {
-  color: transparent;
-}
-
-textarea:focus::-moz-placeholder {
   color: transparent;
 }
 
